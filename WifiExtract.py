@@ -195,30 +195,3 @@ def afficher_menu():
 
 if __name__ == "__main__":
     afficher_menu()
-    """
-
-import time
-import string
-maj=string.ascii_uppercase
-min=string.ascii_lowercase
-digit=string.digits
-total=maj+min+digit
-code=""
-
-passw="TchibanGed123"
-for i in range(len(passw)):
-    for letter in total:
-        print(f"Trying at position{i+1} ->{code+letter}",end="\r")
-        time.sleep(0.04)
-        if letter in passw[i]:
-            code+=letter
-            print("\n\n")
-            print("="*40)
-            print(f"found {code}")
-            print("="*40)
-            print("\n\n")
-            break
-            
-print(code)
-            
-"""

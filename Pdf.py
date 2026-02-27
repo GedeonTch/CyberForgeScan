@@ -1,7 +1,6 @@
 """
 CYBER FORGE SCAN - Convertisseur DOCX / TXT vers PDF
-Unicode + Numérotation des pages + Compatibilité main.py
-Version améliorée
+Unicode + Numérotation des pages 
 """
 
 import os

@@ -3,7 +3,7 @@ Module de Démonstration Bruteforce - CYBER FORGE SCAN
 Démontre la vulnérabilité des mots de passe faibles (ÉDUCATIF UNIQUEMENT)
 Version éthique avec limitations et avertissements
 """
-
+ 
 import time
 import string
 import itertools

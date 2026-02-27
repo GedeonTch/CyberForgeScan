@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 """
 Informations.py - Module d'analyse et gestion de fichiers
 Compatible avec CYBER FORGE SCAN

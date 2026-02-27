@@ -3,23 +3,19 @@
 """
 CYBER FORGE SCAN - Outil de Cybersécurité
 Version: 2.0
-Auteur: Gedeon
+Auteur: GedeonTchibanvunya
+contact whatsapp: +257 66504165
 Description: Suite complète d'outils de sécurité et d'analyse système
 """
 
 import os
 import sys
 import time
-#from tqdm import tqdm
 from typing import Optional
 
 # ============================================================================
 # CONFIGURATION ET COULEURS POUR L'INTERFACE
 # ============================================================================
-""" def progres():
-    for i in tqdm(range(100)):
-        time.sleep(0.03)
-progres() """
 
 class Colors:
     """Codes ANSI pour colorer le terminal"""
@@ -127,7 +123,7 @@ def display_main_menu():
     print("│  [4] 🌐  Outils Réseau & Internet                            │")
     print("│  [5] 📥  Téléchargement & Conversion                         │")
     print("│  [6] 🤖  Assistant NOVA IA                                   │")
-    print("│  [7] ℹ️  À propos & Aide                                     │")
+    print("│  [7] ℹ️   À propos & Aide                                     │")
     print("│  [8] 📝  Feedback                                            │")
     print("│  [0] 🚪  Quitter                                             │")
     print("│                                                              │")
@@ -607,11 +603,6 @@ def menu_aide():
     print("• Ollama (optionnel pour l'IA)")
     
     pause()
-
-
-
-
-
 # ============================================================================
 # FONCTION PRINCIPALE
 # ============================================================================

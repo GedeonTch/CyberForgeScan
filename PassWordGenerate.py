@@ -1,7 +1,6 @@
 """
 Module de Génération de Mots de Passe - CYBER FORGE SCAN
 Génère des mots de passe sécurisés et teste leur robustesse
-Version corrigée et améliorée
 """
 
 import random

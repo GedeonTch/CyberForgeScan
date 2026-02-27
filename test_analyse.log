@@ -1,0 +1,55 @@
+# ============================================================
+# FICHIER DE TEST - CYBER FORGE SCAN
+# Contient des données variées pour tester Analyse.py
+# ============================================================
+
+# --- CONNEXIONS ET AUTHENTIFICATION ---
+2025-01-15 08:30:12 INFO  User admin@entreprise.com logged in from 192.168.1.10
+2025-01-15 08:31:05 ERROR Permission denied for user@test.com trying to access /etc/shadow
+2025-01-15 08:32:44 WARNING Unauthorized access attempt from 203.0.113.47
+2025-01-15 08:33:01 CRITICAL Root login detected from 10.0.0.5 - auth token expired
+2025-01-15 08:35:20 INFO  admin@server.local granted access to /var/log/syslog
+
+# --- ACTIVITÉS RÉSEAU SUSPECTES ---
+2025-02-07 10:15:00 ALERT Brute force attack detected from 45.33.32.156
+2025-02-07 10:15:03 ERROR 401 Unauthorized - invalid credential for api_key: sk-xxxx1234
+2025-02-07 10:15:45 WARNING SQL injection attempt detected - select * from users --
+2025-02-07 10:16:10 INFO  Connection from 172.16.0.23 to port 443 - OK
+2025-02-07 10:17:55 ERROR 500 Internal Server Error - exception in module auth
+2025-02-07 10:18:22 FATAL segfault in process 1234 - OOM killer triggered
+2025-02-07 10:19:00 INFO  Backup completed by backup@system.net - see https://backup.entreprise.com/report
+
+# --- EMAILS ET UTILISATEURS ---
+2025-03-01 14:00:00 INFO  New user registered: jean.dupont@gmail.com from 192.168.0.101
+2025-03-01 14:02:33 INFO  Password reset requested by marie.martin@yahoo.fr
+2025-03-01 14:05:11 WARNING Login failed for contact@domaine.org - account locked after 5 attempts
+2025-03-01 14:07:49 ERROR Token expired for session of pierre@outlook.com from 10.10.10.10
+2025-03-01 14:09:00 INFO  Admin alert sent to security@cyberforge.io
+
+# --- ERREURS SYSTÈME ---
+2025-03-15 22:45:00 ERROR Timeout connecting to database at 127.0.0.1:5432
+2025-03-15 22:45:10 WARNING Connection refused by 8.8.8.8 - DNS resolution failed
+2025-03-15 22:46:05 ERROR 503 Service Unavailable - upstream server 10.0.0.1 not responding
+2025-03-15 22:47:30 CRITICAL Disk full on 192.168.1.254 - logs truncated
+2025-03-15 22:48:00 INFO  Monitoring alert sent to ops@monitoring.com
+
+# --- ACCÈS API ET LIENS ---
+2025-04-10 09:00:00 INFO  API call from developer@startup.io - endpoint https://api.cyberforge.io/v1/scan
+2025-04-10 09:01:15 WARNING Invalid secret in request from 198.51.100.22
+2025-04-10 09:02:40 INFO  Documentation consulted at https://docs.github.com/en/security
+2025-04-10 09:03:55 ERROR 404 Not Found - https://api.cyberforge.io/v1/deprecated
+2025-04-10 09:05:00 INFO  User support@helpdesk.net opened ticket #4521
+
+# --- HEURES ET DATES VARIÉES ---
+Backup lancé à 23:59 le 31/12/2024 par system@local.net
+Scan quotidien démarré le 01-01-2025 à 00:00:00 depuis 192.168.100.1
+Rapport généré le 2025-06-30 à 12:30 PM par report@analyse.com
+Session ouverte à 06:45AM par admin@corp.fr depuis 172.31.0.99
+Maintenance planifiée le 15/07/2025 à 02:00 - contact: infra@entreprise.com
+
+# --- DONNÉES SUPPLÉMENTAIRES ---
+2025-05-20 16:30:00 INFO  Hack attempt blocked from 91.108.4.128 - firewall rule applied
+2025-05-20 16:31:10 WARNING Credential stuffing detected - multiple IPs: 5.5.5.5, 6.6.6.6, 7.7.7.7
+2025-05-20 16:32:00 ERROR Breach detected in module payment - see https://security.cyberforge.io/alerts
+2025-05-20 16:33:45 INFO  Incident reported by soc@cyberforge.io at 04:33PM
+2025-05-20 16:35:00 CRITICAL Access denied to /root/.ssh/id_rsa from 203.0.113.100

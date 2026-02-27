@@ -1,3 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
+Extraction_Analyse.txt
+feedbacks.txt
+WiFi_Info_*.txt
+*.txt

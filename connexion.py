@@ -152,7 +152,7 @@ def compare_speeds():
         print(f"⏱️  Ping moyen     : {round(avg_ping, 2)} ms")
         print("=" * 50)
 
-
+ 
 # ============ UTILISATION ============
 
 def demo_speedtest():

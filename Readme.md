@@ -1,7 +1,22 @@
 # 🔐 CYBER FORGE SCAN
+
+<p align="center">
+  <img src="screenshots/menu_principal.png" alt="CYBER FORGE SCAN - Menu Principal" width="600"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python" alt="Python"/>
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-green?style=for-the-badge" alt="Platform"/>
+  <img src="https://img.shields.io/badge/Usage-Éducatif%20Uniquement-red?style=for-the-badge" alt="Usage"/>
+  <img src="https://img.shields.io/badge/Version-1.0%2F2026-yellow?style=for-the-badge" alt="Version"/>
+  <img src="https://img.shields.io/badge/License-Educational-orange?style=for-the-badge" alt="License"/>
+</p>
+
 ---
+
 ## 📋 Table des Matières
 
+- [Screenshots](#-screenshots)
 - [Vue d'ensemble](#-vue-densemble)
 - [Fonctionnalités](#-fonctionnalités)
 - [Installation](#-installation)
@@ -15,6 +30,37 @@
 - [Contribution](#-contribution)
 - [Licence](#-licence)
 - [Contact](#-contact--support)
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Menu Principal
+<p align="center">
+  <img src="screenshots/menu_principal.png" alt="Menu Principal" width="49%"/>
+  <img src="screenshots/menu_kali.png" alt="Menu sur Kali Linux" width="49%"/>
+</p>
+
+> Interface principale de CYBER FORGE SCAN sur Kali Linux — bannière ASCII et menu interactif coloré.
+
+---
+
+### 🚨 Analyse & Détection d'Alertes de Sécurité
+<p align="center">
+  <img src="screenshots/alertes_securite.png" alt="Alertes de sécurité détectées" width="80%"/>
+</p>
+
+> Détection en temps réel des mots-clés sensibles dans un fichier log : `auth`, `admin`, `error`, `permission`, `denied`, `critical`...
+
+---
+
+### 📊 Résultats d'Extraction Complets
+<p align="center">
+  <img src="screenshots/resultats_extraction.png" alt="Résultats extraction" width="49%"/>
+  <img src="screenshots/resume_final.png" alt="Résumé final" width="49%"/>
+</p>
+
+> Extraction complète : **17 emails**, **19 adresses IP**, **38 heures**, **10 dates**, **5 liens** — résultats sauvegardés automatiquement dans `Extraction_Analyse.txt`.
 
 ---
 
@@ -80,7 +126,7 @@
 ```bash
 # Cloner le projet
 git clone https://github.com/GedeonTch/CyberForgeScan.git
-cd cyber-forge-scan
+cd cyberForgeScan
 
 # Installer les dépendances
 pip install -r requirements.txt
@@ -94,13 +140,13 @@ python main.py
 ```bash
 # Télécharger le ZIP depuis GitHub
 # Extraire les fichiers
-cd cyber-forge-scan
+cd CyberForgeScan
 
 # Installer les modules Python requis
 pip install fpdf2 python-docx speedtest-cli yt-dlp opencv-python numpy pyautogui Pillow requests
 
 # Lancer
-python main.py
+python CyberForceScanMain.py
 ```
 
 ---
@@ -137,7 +183,7 @@ python main.py
 ### Démarrage
 
 ```bash
-python main.py
+python CyberForceScanMain.py
 ```
 
 ### Navigation dans les menus
@@ -173,6 +219,7 @@ Extrait des données structurées depuis des fichiers texte ou logs :
 - Adresses IP (IPv4)
 - Dates et heures
 - Mots-clés sensibles
+- Liens
 
 **Exemple d'utilisation:**
 ```python
@@ -399,7 +446,7 @@ class Colors:
 ### Exemple 1: Analyser un fichier log
 
 ```bash
-python main.py
+python CyberForceScanMain.py
 # Choisir [1] Analyse & Extraction
 # Choisir [1] Analyser un fichier log
 # Entrer: /var/log/apache2/access.log
@@ -412,7 +459,7 @@ python main.py
 ### Exemple 2: Générer un mot de passe ultra-sécurisé
 
 ```bash
-python main.py
+python CyberForceScanMain.py
 # Choisir [2] Gestion des Mots de Passe
 # Choisir [3] Générer un mot de passe aléatoire fort
 # Entrer: 24
@@ -537,7 +584,7 @@ ollama serve
 ```bash
 # Forcer l'encodage UTF-8
 export PYTHONIOENCODING=utf-8
-python main.py
+python CyberForceScanMain.py
 ```
 
 ---
@@ -549,8 +596,8 @@ Les contributions sont les bienvenues ! Voici comment procéder :
 ### 1. Fork le projet
 
 ```bash
-git clone https://github.com/GedeonTch/CyberForgeScan.git
-cd cyber-forge-scan
+git clone https://github.com/GedeonTch/CyberForgeScan.gi
+cd CyberForgeScan
 ```
 
 ### 2. Créer une branche
@@ -608,8 +655,8 @@ Ce logiciel est fourni "tel quel", sans garantie d'aucune sorte. En aucun cas l'
 ## 📞 Contact & Support
 
 - **Auteur:** Gedeon
-- **GitHub:** [github.com/votre-username](https://github.com/votre-username)
-- **Email:** votre.email@example.com
+- **GitHub:** [github.com/GedeonTch](https://github.com/GedeonTch/CyberForgeScan.git)
+- **Email:** tchibanvunyagedeon@gmail.com
 - **Issues:** [github.com/GedeonTch/CyberForgeScanissues](https://github.com/GedeonTch/CyberForgeScan/issues)
 
 ### Support

@@ -6,7 +6,7 @@
 ```bash
 # Option A: Avec Git
 git clone https://github.com/votre-username/cyber-forge-scan.git
-cd cyber-forge-scan
+cd CyberForgeScan
 
 # Option B: Sans Git
 # Télécharger le ZIP depuis GitHub
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ### 3️⃣ Lancer le programme
 ```bash
-python main.py
+python CyberForgeScan.py
 ```
 
 ---
@@ -34,7 +34,7 @@ python main.py
 ## 🎯 Première utilisation
 
 ### Test rapide: Générer un mot de passe
-1. Lancer `python main.py`
+1. Lancer `python CyberForgeScan.py`
 2. Choisir `[2]` (Gestion des Mots de Passe)
 3. Choisir `[3]` (Générer un mot de passe aléatoire)
 4. Entrer `20` pour la longueur
@@ -48,7 +48,7 @@ ERROR: Permission denied for user@test.com
 10:30AM - Connection from 10.0.0.5
 ```
 
-2. Lancer `python main.py`
+2. Lancer `python CyberForgeScan.py`
 3. Choisir `[1]` (Analyse & Extraction)
 4. Choisir `[1]` (Analyser un fichier log)
 5. Entrer le chemin de `test.log`
@@ -61,14 +61,14 @@ ERROR: Permission denied for user@test.com
 ### Installation complète
 ```bash
 # Cloner
-git clone https://github.com/votre-username/cyber-forge-scan.git
-cd cyber-forge-scan
+git clone https://github.com/GedeonTch/CyberForgeScan.git
+cd CyberForgeScan
 
 # Installer
 pip install -r requirements.txt
 
 # Tester
-python main.py
+python CyberForgeScan.py
 ```
 
 ### Avec Ollama (Assistant IA)
@@ -83,7 +83,7 @@ ollama pull phi3:mini
 ollama serve
 
 # 4. Dans un autre terminal, lancer CYBER FORGE SCAN
-python main.py
+python CyberForgeScan.py
 # Choisir [6] Assistant IA
 ```
 
@@ -131,7 +131,7 @@ pip install colorama
 ## 🆘 Besoin d'aide?
 
 1. 📖 Lisez le [README.md](README.md) complet
-2. 🔍 Vérifiez les [Issues GitHub](https://github.com/votre-username/cyber-forge-scan/issues)
+2. 🔍 Vérifiez les [Issues GitHub](https://github.com/GedeonTch/CyberForgeScan/issues)
 3. 💬 Ouvrez une nouvelle Issue
 
 ---
@@ -140,7 +140,7 @@ pip install colorama
 
 ### 1. Générer et tester des mots de passe
 ```bash
-python main.py
+python CyberForgeScan.py
 [2] → [1] → Entrer "MonMotDePasse" → Entrer "10"
 ```
 
@@ -152,16 +152,16 @@ python main.py
 
 ### 3. Télécharger une vidéo YouTube
 ```bash
-python main.py
+python CyberForgeScan.py
 [5] → [1] → Coller l'URL YouTube
 ```
 
 ### 4. Tester sa connexion Internet
 ```bash
-python main.py
+python CyberForgeScan.py
 [4] → [1]
 ```
 
 ---
 
-**Prêt à commencer? Lancez `python main.py` ! 🚀**
+**Prêt à commencer? Lancez `python CyberForgeScan.py` ! 🚀**
