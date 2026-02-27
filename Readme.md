@@ -747,6 +747,6 @@ Merci aux projets open-source qui rendent CYBER FORGE SCAN possible :
 
 ---
 
-Made with ❤️ by Gedeon | © 2025 - Educational Use Only
+Made with ❤️ by Gedeon | © 2026 - Educational Use Only
 
 </div>
