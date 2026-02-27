@@ -127,6 +127,8 @@
 # Cloner le projet
 git clone https://github.com/GedeonTch/CyberForgeScan.git
 cd cyberForgeScan
+python3 -m venv venv
+source venv/bin/activate
 
 # Installer les dépendances
 pip install -r requirements.txt
