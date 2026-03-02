@@ -36,9 +36,12 @@
 ## 📸 Screenshots
 
 ### 🖥️ Menu Principal
+
 <p align="center">
   <img src="screenshots/menu_principal.png" alt="Menu Principal" width="49%"/>
-  <img src="screenshots/menu_kali.png" alt="Menu sur Kali Linux" width="49%"/>
+</p>
+<p align="center">
+<img src="screenshots/menu_kali.png" alt="Menu sur Kali Linux" width="49%"/>
 </p>
 
 > Interface principale de CYBER FORGE SCAN sur Kali Linux — bannière ASCII et menu interactif coloré.
@@ -46,6 +49,7 @@
 ---
 
 ### 🚨 Analyse & Détection d'Alertes de Sécurité
+
 <p align="center">
   <img src="screenshots/alertes_securite.png" alt="Alertes de sécurité détectées" width="80%"/>
 </p>
@@ -55,6 +59,7 @@
 ---
 
 ### 📊 Résultats d'Extraction Complets
+
 <p align="center">
   <img src="screenshots/resultats_extraction.png" alt="Résultats extraction" width="49%"/>
   <img src="screenshots/resume_final.png" alt="Résumé final" width="49%"/>
@@ -74,13 +79,14 @@
 ✅ **Modulaire** - Chaque outil fonctionne indépendamment  
 ✅ **Pédagogique** - Idéal pour apprendre la cybersécurité  
 ✅ **Multiplateforme** - Windows, Linux, macOS  
-✅ **Open Source** - Code source disponible et modifiable  
+✅ **Open Source** - Code source disponible et modifiable
 
 ---
 
 ## 🚀 Fonctionnalités
 
 ### 1️⃣ Analyse & Extraction de Données
+
 - 📧 **Extraction d'emails** depuis fichiers logs
 - 🌐 **Extraction d'adresses IP**
 - 📅 **Détection de dates et heures**
@@ -89,6 +95,7 @@
 - 💾 **Identification des gros fichiers**
 
 ### 2️⃣ Gestion des Mots de Passe
+
 - 🔐 **Génération de mots de passe sécurisés**
   - Personnalisés (avec votre base)
   - Aléatoires (haute sécurité)
@@ -97,22 +104,26 @@
 - ⚡ **Démonstration bruteforce** (éducatif)
 
 ### 3️⃣ Gestion des Fichiers
+
 - 🏷️ **Renommage en masse** de fichiers
 - 📂 **Organisation automatique** par extension
 - 📄 **Conversion DOCX/TXT → PDF**
 - 🔄 **Conversion en lot** (dossiers entiers)
 
 ### 4️⃣ Outils Réseau & Internet
+
 - 📡 **Test de vitesse Internet** (download/upload/ping)
 - 📊 **Comparaison de tests** multiples
 - 🔑 **Extraction des mots de passe WiFi** (Windows uniquement)
 
 ### 5️⃣ Téléchargement & Conversion
+
 - 🎥 **Téléchargement YouTube** (vidéo/audio)
 - 📹 **Enregistrement d'écran** (configurable)
 - ℹ️ **Récupération d'infos vidéo** sans télécharger
 
 ### 6️⃣ Assistant IA
+
 - 🤖 **ChatBot local** (Ollama)
 - 💬 **Support conversationnel**
 - 📚 **Aide contextuelle** sur les outils
@@ -156,24 +167,26 @@ python CyberForceScanMain.py
 ## 📦 Prérequis
 
 ### Système
+
 - **Python** 3.7 ou supérieur
 - **Système d'exploitation**: Windows 10/11, Linux, macOS
 
 ### Modules Python (installés automatiquement)
 
-| Module | Usage | Installation |
-|--------|-------|--------------|
-| `fpdf2` | Création de PDF | Automatique |
-| `python-docx` | Lecture DOCX | Automatique |
-| `speedtest-cli` | Test vitesse Internet | Automatique |
-| `yt-dlp` | Téléchargement YouTube | Automatique |
-| `opencv-python` | Enregistrement écran | Automatique |
-| `pyautogui` | Capture d'écran | Automatique |
-| `requests` | Requêtes HTTP | Automatique |
-| `Pillow` | Traitement d'images | Automatique |
-| `numpy` | Calculs matriciels | Automatique |
+| Module          | Usage                  | Installation |
+| --------------- | ---------------------- | ------------ |
+| `fpdf2`         | Création de PDF        | Automatique  |
+| `python-docx`   | Lecture DOCX           | Automatique  |
+| `speedtest-cli` | Test vitesse Internet  | Automatique  |
+| `yt-dlp`        | Téléchargement YouTube | Automatique  |
+| `opencv-python` | Enregistrement écran   | Automatique  |
+| `pyautogui`     | Capture d'écran        | Automatique  |
+| `requests`      | Requêtes HTTP          | Automatique  |
+| `Pillow`        | Traitement d'images    | Automatique  |
+| `numpy`         | Calculs matriciels     | Automatique  |
 
 ### Optionnel
+
 - **Ollama** (pour l'assistant IA)
   - Installation: https://ollama.ai
   - Modèle recommandé: `phi3:mini`
@@ -214,9 +227,11 @@ Tapez le numéro correspondant et appuyez sur **Entrée**.
 ## 📚 Modules
 
 ### Module 1: Analyse.py
+
 **Analyse de fichiers logs**
 
 Extrait des données structurées depuis des fichiers texte ou logs :
+
 - Emails (regex avancée)
 - Adresses IP (IPv4)
 - Dates et heures
@@ -224,6 +239,7 @@ Extrait des données structurées depuis des fichiers texte ou logs :
 - Liens
 
 **Exemple d'utilisation:**
+
 ```python
 from Analyse import analyser_fichier_log
 
@@ -236,14 +252,17 @@ print(f"Emails trouvés: {emails}")
 ---
 
 ### Module 2: PassWordGenerate.py
+
 **Génération et test de mots de passe**
 
 **Fonctions principales:**
+
 - `generatePswdWithInfo(base, length)` - Génère 5 mots de passe moyens + 4 forts
 - `passWordTest(password)` - Vérifie la robustesse
 - `genateStrong_WithoutInfo(length)` - Génération aléatoire pure
 
 **Critères de robustesse:**
+
 - ✅ Longueur ≥ 8 caractères
 - ✅ Majuscule en début
 - ✅ Au moins un chiffre
@@ -252,6 +271,7 @@ print(f"Emails trouvés: {emails}")
 - ❌ Pas de mots sensibles (admin, password)
 
 **Exemple:**
+
 ```python
 from PassWordGenerate import genateStrong_WithoutInfo
 
@@ -262,9 +282,11 @@ print(password)  # Ex: "K9$mP2@vX7#nQ5!zL4&j"
 ---
 
 ### Module 3: Informations.py
+
 **Analyse détaillée de fichiers**
 
 **Fonctions:**
+
 - `informations(path)` - Liste tous les fichiers avec métadonnées
 - `lister_gros_fichier(path)` - Trouve le fichier le plus volumineux
 - `scanner_dossier(path)` - Compte fichiers/dossiers
@@ -272,6 +294,7 @@ print(password)  # Ex: "K9$mP2@vX7#nQ5!zL4&j"
 - `organiser_fichiers(path)` - Trie par extension
 
 **Informations extraites:**
+
 - Nom et emplacement
 - Taille (octets, Ko, Mo)
 - Date de dernière modification
@@ -283,19 +306,23 @@ print(password)  # Ex: "K9$mP2@vX7#nQ5!zL4&j"
 ---
 
 ### Module 4: connexion.py
+
 **Test de vitesse Internet**
 
 Utilise `speedtest-cli` pour mesurer :
+
 - **Download** (Mbps)
 - **Upload** (Mbps)
 - **Ping** (ms)
 
 **Fonctions:**
+
 - `check_internet_speed()` - Test simple
 - `compare_speeds()` - Moyenne de plusieurs tests
 - `display_speed_results(speed)` - Affichage formaté
 
 **Évaluation automatique:**
+
 - 🚀 > 100 Mbps: Excellente
 - ✅ 50-100 Mbps: Bonne
 - ⚠️ 10-50 Mbps: Moyenne
@@ -304,11 +331,13 @@ Utilise `speedtest-cli` pour mesurer :
 ---
 
 ### Module 5: WifiExtract.py
+
 **Extraction des mots de passe WiFi**
 
 ⚠️ **Windows uniquement** - Nécessite des droits administrateur
 
 Récupère les profils WiFi enregistrés sur le système :
+
 - Nom du réseau (SSID)
 - Mot de passe (si enregistré)
 
@@ -321,11 +350,13 @@ Récupère les profils WiFi enregistrés sur le système :
 ---
 
 ### Module 6: Youtube.py
+
 **Téléchargement YouTube**
 
 Basé sur `yt-dlp` (fork amélioré de youtube-dl)
 
 **Fonctionnalités:**
+
 - Télécharger vidéo (résolutions: 720p, 480p, 360p, best)
 - Télécharger audio uniquement
 - Récupérer métadonnées (titre, auteur, durée, vues)
@@ -334,6 +365,7 @@ Basé sur `yt-dlp` (fork amélioré de youtube-dl)
 **Classe principale:** `YouTubeDownloader`
 
 **Exemple:**
+
 ```python
 from Youtube import YouTubeDownloader
 
@@ -346,14 +378,17 @@ dl.download_video("https://youtube.com/watch?v=...")
 ---
 
 ### Module 7: Pdf.py
+
 **Conversion vers PDF**
 
 Convertit documents texte vers PDF avec mise en forme :
+
 - **Formats d'entrée:** DOCX, TXT
 - **Encodages supportés:** UTF-8, Latin-1, CP1252
 - **Nettoyage automatique** des emojis/caractères spéciaux
 
 **Fonctions:**
+
 - `convert_to_pdf(path, output_name)` - Convertit un fichier
 - `batch_convert(folder)` - Convertit un dossier entier
 - `clean_text(text)` - Supprime caractères incompatibles
@@ -361,9 +396,11 @@ Convertit documents texte vers PDF avec mise en forme :
 ---
 
 ### Module 8: ScreenRecord.py
+
 **Enregistrement d'écran**
 
 Capture vidéo de l'écran avec options configurables :
+
 - **FPS:** 10-30 (recommandé: 20)
 - **Qualité:** low, medium, high
 - **Région:** Écran complet ou zone spécifique
@@ -371,6 +408,7 @@ Capture vidéo de l'écran avec options configurables :
 **Classe:** `ScreenRecorder`
 
 **Exemple:**
+
 ```python
 from ScreenRecord import ScreenRecorder
 
@@ -383,9 +421,11 @@ recorder.stop_recording()
 ---
 
 ### Module 9: ChatBot.py
+
 **Assistant IA conversationnel**
 
 Intègre Ollama pour fournir une assistance interactive :
+
 - Réponses aux questions sur la cybersécurité
 - Aide contextuelle sur les outils
 - Support en langage naturel
@@ -395,6 +435,7 @@ Intègre Ollama pour fournir une assistance interactive :
 **Prérequis:** Ollama installé et lancé (`ollama serve`)
 
 **Exemple:**
+
 ```python
 from ChatBot import CyberForgeAssistant
 
@@ -493,6 +534,7 @@ python main.py
 ```
 
 **Résultat:**
+
 ```
 ═════════════════════════════════════════════════════
 📊 RÉSULTATS DU TEST DE VITESSE
@@ -513,6 +555,7 @@ python main.py
 Ce logiciel est fourni **à des fins éducatives uniquement**. L'utilisateur est responsable de se conformer à toutes les lois locales, nationales et internationales.
 
 **Utilisations INTERDITES:**
+
 - ❌ Accès non autorisé à des systèmes informatiques
 - ❌ Extraction de données sans permission
 - ❌ Bruteforce de mots de passe non autorisé
@@ -520,6 +563,7 @@ Ce logiciel est fourni **à des fins éducatives uniquement**. L'utilisateur est
 - ❌ Surveillance illégale
 
 **Utilisations AUTORISÉES:**
+
 - ✅ Analyse de vos propres fichiers/systèmes
 - ✅ Test de vos propres mots de passe
 - ✅ Apprentissage de la cybersécurité
@@ -528,6 +572,7 @@ Ce logiciel est fourni **à des fins éducatives uniquement**. L'utilisateur est
 ### 🔐 Responsabilité
 
 L'auteur décline toute responsabilité en cas de :
+
 - Mauvaise utilisation de l'outil
 - Dommages causés à des systèmes
 - Violations de lois ou règlements
@@ -544,6 +589,7 @@ L'auteur décline toute responsabilité en cas de :
 **Erreur:** `ModuleNotFoundError: No module named 'fpdf'`
 
 **Solution:**
+
 ```bash
 pip install fpdf2
 # ou
@@ -557,6 +603,7 @@ pip install -r requirements.txt
 **Erreur:** `Erreur: Ollama n'est pas démarré`
 
 **Solution:**
+
 ```bash
 # Installer Ollama
 # Télécharger depuis https://ollama.ai
@@ -575,6 +622,7 @@ ollama serve
 **Erreur:** `ERREUR DE PERMISSION`
 
 **Solution:**
+
 - Windows: Clic droit sur le terminal → **Exécuter en tant qu'administrateur**
 - Relancer le script
 
@@ -583,6 +631,7 @@ ollama serve
 ### Problème: Caractères mal affichés
 
 **Solution:**
+
 ```bash
 # Forcer l'encodage UTF-8
 export PYTHONIOENCODING=utf-8
@@ -640,9 +689,10 @@ git push origin feature/nouvelle-fonctionnalite
 
 ## 📄 Licence
 
-Ce projet est distribué sous **licence éducative**. 
+Ce projet est distribué sous **licence éducative**.
 
 **Conditions:**
+
 - ✅ Usage personnel et éducatif libre
 - ✅ Modification du code autorisée
 - ✅ Distribution autorisée (avec attribution)
@@ -664,6 +714,7 @@ Ce logiciel est fourni "tel quel", sans garantie d'aucune sorte. En aucun cas l'
 ### Support
 
 Pour obtenir de l'aide :
+
 1. 📖 Consultez d'abord cette documentation
 2. 🔍 Vérifiez les [Issues GitHub](https://github.com/GedeonTch/CyberForgeScan/issues)
 3. 💬 Ouvrez une nouvelle Issue si nécessaire
@@ -712,12 +763,14 @@ Merci aux projets open-source qui rendent CYBER FORGE SCAN possible :
 ## 🗺️ Roadmap
 
 ### Version 2.1 (À venir)
+
 - [ ] Interface graphique (GUI avec Tkinter)
 - [ ] Support multilingue (EN, ES)
 - [ ] Tests unitaires
 - [ ] Documentation API
 
 ### Version 3.0 (Futur)
+
 - [ ] Mode serveur/client
 - [ ] Dashboard web
 - [ ] Intégration base de données
@@ -728,6 +781,7 @@ Merci aux projets open-source qui rendent CYBER FORGE SCAN possible :
 ## 📝 Changelog
 
 ### Version 2.0 (Actuelle)
+
 - ✨ Nouveau menu interactif avec couleurs
 - 📚 Documentation complète (README)
 - 🔧 Refactorisation du code
@@ -735,6 +789,7 @@ Merci aux projets open-source qui rendent CYBER FORGE SCAN possible :
 - ⚡ Amélioration des performances
 
 ### Version 1.0 (Initiale)
+
 - 🎉 Première version
 - 9 modules fonctionnels
 - Interface en ligne de commande basique
